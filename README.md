@@ -26,13 +26,15 @@ Expected outcomes:
 
 ## Install the tool
 
-This repository is a synthetic fixture for the public `behavior-review` tool. In a sibling
-directory, clone and install the engine first:
+This repository is a synthetic fixture for the public `behavior-review` tool. From the parent
+directory, clone and install the engine beside this fixture first:
 
 ```powershell
+cd ..
 git clone https://github.com/webdev-testa/pocbobbin.git behavior-review-tool
 python -m venv behavior-review-tool/.venv
 behavior-review-tool/.venv/Scripts/pip install -e behavior-review-tool
+cd behavior-review-demo
 ```
 
 Then run the commands above from this repository. The `reports/` directory is intentionally
