@@ -1,0 +1,6 @@
+{
+  "id": "price_total_boundary",
+  "target": "sample_project.invoice:price_total",
+  "args": [[199.99], 10.0],
+  "note": "Boundary input for currency rounding; same probe bytes run on both revisions."
+}
