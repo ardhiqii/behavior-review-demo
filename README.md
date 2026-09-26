@@ -23,3 +23,17 @@ Expected outcomes:
 
 - `scenario-delta`: `delta_observed`, old `179.99`, new `180.0`.
 - `scenario-fixed`: `same_on_tested_cases`, linked to the earlier delta.
+
+## Install the tool
+
+This repository is a synthetic fixture for the public `behavior-review` tool. In a sibling
+directory, clone and install the engine first:
+
+```powershell
+git clone https://github.com/webdev-testa/pocbobbin.git behavior-review-tool
+python -m venv behavior-review-tool/.venv
+behavior-review-tool/.venv/Scripts/pip install -e behavior-review-tool
+```
+
+Then run the commands above from this repository. The `reports/` directory is intentionally
+ignored; generated reports are local validation artifacts, not final production evidence.
